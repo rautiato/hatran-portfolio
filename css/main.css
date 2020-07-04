@@ -1,0 +1,292 @@
+/* Start: navbar */
+	.thumbnail {
+		height: 50px;
+		width: 50px;
+	}
+
+	#nav-myname{
+		font-size: 25px;
+	}
+	
+	.navbar {
+		width: 100%;
+		background-color: #004d4d;
+		padding: 0;
+		position: fixed; /* fix the navbar position */
+		top: 0; /* Position the navbar at the top of the page */
+	}
+
+	.navbar a {
+		float: left;
+		padding: 7px;
+		color: white;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	.nav-item{
+		padding:0.5rem 0.5rem;
+	}
+	
+	/* make body content go behind the nav bar when scrolling up*/
+	#topbar {
+		z-index: 999;
+	}
+/* End: navbar */	
+
+/* Start: sidenav */
+	.sidenav {
+		height: 100%;
+		width: 170px;
+		position: fixed;
+		top: 51px;
+		background-color: #e6e6e6;
+		padding-top: 20px;
+		text-align: center;
+		list-style: none;
+		padding-left: 2px;
+		border-right: 5px solid #004d4d;
+		overflow-y: auto; /* add vertical scroll bar when resizing */
+	}
+
+	.sidenav li a {
+		display: block;
+		float: none;
+		padding: 7px;
+		color: Black;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	.sidenav li p {
+		margin-top: 10px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		font-size: 17px;
+	}
+
+	.sidenav a:hover, .navbar a:hover {
+		background-color: SteelBlue;
+	}
+	
+	.dropbtn {
+		background-color: #e6e6e6;
+		color: black;
+		padding-top: 5px;
+		border: none;
+		min-width: 163px;
+	}
+
+	.dropbtn:focus{
+		outline:none;
+	}
+	
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #B0C4DE;
+	  min-width: 163px;
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	.dropdown-content a:hover {
+		background-color: grey;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.dropdown:hover .dropbtn {
+		background-color: SteelBlue;
+	}	
+/* End: sidenav */
+
+/* format body - all pages */
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		background: WhiteSmoke;
+	}
+
+/* Start: portfolio page */
+	#home-portfolio {
+		/* Centering content of the portfolio page */
+		position: absolute;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 70%;
+		height: 70%;
+	}
+	
+	#home-rightCol {
+		font-weight: bold;
+		text-align: center;
+	}
+
+	#home-rightCol h1, h3, h5 {
+		font-weight: bold;
+		text-align: center;
+	}
+
+	#home-leftCol {
+		text-align: center;
+	}
+	
+	#home-leftCol picture img {
+		/*avoid overlapping bootstrap columns when resizing */
+		width: 100%;
+		height: auto;
+	}
+/* End: portfolio page */
+
+/* Start: projects page */
+	.projects-main {
+		margin-left: 170px; /* Same as the width of the sidenav */
+		margin-top: 50px;
+		padding: 20px;
+		background: #e6e6e6;
+	}
+	
+	.all-articles{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 10px;
+		background-color: white;
+		border: 0.5px solid lightgrey;
+	}
+	
+	hr {
+		margin-top: 0;
+	}
+	
+		section h3 {
+		font-weight: bold;
+		text-align: left;
+	}
+
+	article h5, h6 {
+		color: #006666;
+		font-weight: bold;
+		text-align: left;
+	}
+	.project-sub-heading {
+		text-decoration: underline;
+	}
+	
+	/* resize carousel */
+	#myslider{
+		height: 60%;
+		width: 60%;
+		overflow: hidden;
+	}
+
+	/*center carousel */
+	.carousel {
+		margin: auto;
+	}
+	/* change color of carousel control icon */
+	.carousel-control-prev, .carousel-control-next {
+		filter: invert(100%);
+	}
+
+	/* position carousel indicators */
+	.carousel-inner {
+		margin-bottom:20px;
+	}
+
+/* End: projects page */
+
+/* Start: about page */
+	.card-parent-div {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 60%;
+		height: 65%;
+		padding: 20px;
+		background: #004d4d;
+		display: flex; /*make parent a flexbox*/
+		flex-direction: column; /*children should go down the page*/
+	}
+	
+	.card-child-div {
+		flex: 1;
+		background-color: white;
+		border: 1px solid lightgrey;
+		padding: 10px;
+		overflow: auto;
+		margin: 5px;
+	}
+	
+	footer {
+		text-align: right;
+		color: #004d4d;
+		font-weight: bold;
+	}
+/* End: about page */
+
+/* Start: contact page */
+		.contact-row {
+			flex: 1;
+			background-color: white;
+			margin: 5px;
+			overflow: auto;
+		}
+		
+		.contact-leftCol{
+			padding: 0;
+		}
+		
+		#contact-leftCol p i {
+			color: #004d4d;
+			font-size: 40px;
+			padding-left: 15px;
+		}		
+
+		#contact-leftCol p span{
+			font-size: 27px;
+			overflow: auto;
+		}
+		
+		.contact-rightCol {
+			padding-top: 15px;
+		}
+		
+		#contact-name-card{
+			text-align: center;
+			font-size: 45px;
+			color: #004d4d;
+		}
+		
+		.contact-rightCol a:hover{
+			text-decoration: none;
+		}
+/* End: contact page */		
+
+@media screen and (max-width: 500px) {
+	.navbar a {
+	float: none;
+	display: block;
+	}
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

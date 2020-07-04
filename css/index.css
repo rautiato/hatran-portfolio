@@ -1,0 +1,17 @@
+h1{
+	font-size:70px;
+}
+h3{
+	font-size:40px;
+}
+#stars{
+	font-size: 12px;
+}
+
+#leftCol{
+	text-align: right;
+}
+
+#rightCol{
+	text-align: center;
+}
