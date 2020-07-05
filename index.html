@@ -19,7 +19,7 @@
                 </button>				
 				<div id="navbarCollapse"  class="collapse navbar-collapse">
 					<!-- Navbar Right Side -->
-					<div class="navbar-nav ml-auto">
+					<div class="ml-auto">
 						<a href="about.html"><i class="fa fa-fw fa-user mr-2"></i>About Me</a>
 						<a href="projects.html"><i class="fa fa-folder-open mr-2"></i>Projects</a>
 						<a href="contact.html"><i class="fa fa-envelope mr-2"></i>Contact Me</a>
@@ -27,6 +27,33 @@
 				</div>
 			</div>
 		</nav>
+		
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+        <div class="container-fluid">
+                <img class="rounded-circle thumbnail" src="{{ user.profile.image.url }}">
+                <a class="navbar-brand mr-1">{{ user.first_name }}</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="/">Home</a>
+                        <a class="nav-item nav-link" href="{% url 'blog_home' %}">Blog</a>
+                        <a class="nav-item nav-link" href="{% url 'post_create' %}">New Post</a>
+                        <a class="nav-item nav-link" href="{% url 'api' %}" target="_blank">API</a>
+                        <a class="nav-item nav-link" href="{% url 'todo_home' %}">To-do List</a>                        
+                    </div>
+                    <!-- Navbar Right Side -->
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+                        <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
+                        <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+                    </div>              
+                </div>
+        </div>    
+    </nav>
+
+		
 
 		<div id="home-portfolio" class="container-fluid">
 			<div class="row h-100">
