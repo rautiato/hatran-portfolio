@@ -228,8 +228,7 @@
 	
 	.card-child-div {
 		flex: 1;
-		background-color: white;
-		border: 1px solid lightgrey;
+		background-color: #FAFAD2;
 		padding: 10px;
 		overflow: auto;
 		margin: 5px;
@@ -245,28 +244,31 @@
 /* Start: contact page */
 		.contact-row {
 			flex: 1;
-			background-color: white;
+			background-color: #FAFAD2;
 			margin: 5px;
 			overflow: auto;
 		}
-		
-		.contact-leftCol{
+
+		#contact-leftCol {
 			padding: 0;
-		}
+		}		
 		
-		#contact-leftCol p i {
+		#contact-rightCol {
+			padding-top: 15px;
+		}		
+		
+		#contact-rightCol a:hover{
+			text-decoration: none;
+		}		
+
+		#contact-rightCol i {
 			color: #004d4d;
 			font-size: 40px;
 			padding-left: 15px;
 		}		
 
-		#contact-leftCol p span{
+		#contact-rightCol span{
 			font-size: 27px;
-			overflow: auto;
-		}
-		
-		.contact-rightCol {
-			padding-top: 15px;
 		}
 		
 		#contact-name-card{
@@ -275,9 +277,6 @@
 			color: #004d4d;
 		}
 		
-		.contact-rightCol a:hover{
-			text-decoration: none;
-		}
 /* End: contact page */		
 
 @media screen and (max-width: 500px) {
