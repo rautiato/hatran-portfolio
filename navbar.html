@@ -1,5 +1,8 @@
 <div class="container-fluid">
-	<img class="rounded-circle thumbnail" src="images/avatar.jpg">
+	<picture>
+		<source media="(max-width: 600px)" srcset="images/avatar-120x90.jpg">
+		<img class="rounded-circle thumbnail" src="images/avatar-400x300.jpg" alt="Avatar">
+	</picture>
 	<a id="nav-home" class="nav-item" href="index.html">Home</a>
 	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 		<span class="navbar-toggler-icon">
@@ -11,7 +14,8 @@
 		<!-- Navbar Right Side -->
 		<div class="ml-auto">
 			<a href="about.html"><i class="nav-item fa fa-fw fa-user mr-2"></i>About Me</a>
-			<a href="projects.html"><i class="nav-item fa fa-folder-open mr-2"></i>Projects</a>
+			<a href="education.html"><i class="nav-item fa fa-graduation-cap mr-2"></i>Education</a>
+			<a href="projects.html"><i class="nav-item fa fa-briefcase mr-2"></i>Projects</a>
 			<a href="contact.html"><i class="nav-item fa fa-envelope mr-2"></i>Contact Me</a>
 		</div>              
 	</div>

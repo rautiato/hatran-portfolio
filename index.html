@@ -10,35 +10,19 @@
 	</head>
 	
 	
-	<body>				
-		<nav id="topbar" class="navbar navbar-expand-md">
-			<div class="container-fluid">
-				<img class="rounded-circle thumbnail" src="images/avatar.jpg">
-				<a id="nav-home" class="nav-item" href="index.html">Home</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon">
-						<!-- use customer toogler icon for dark navbar -->
-						<i class="fa fa-navicon" style="color:white; font-size:28px;"></i>
-					</span>
-                </button>				
-				<div id="navbarCollapse"  class="collapse navbar-collapse">
-					<!-- Navbar Right Side -->
-					<div class="ml-auto">
-						<a href="about.html"><i class="nav-item fa fa-fw fa-user mr-2"></i>About Me</a>
-						<a href="projects.html"><i class="nav-item fa fa-folder-open mr-2"></i>Projects</a>
-						<a href="contact.html"><i class="nav-item fa fa-envelope mr-2"></i>Contact Me</a>
-					</div>              
-				</div>
-			</div>
-		</nav>	
+	<body>
 		
+		<!-- navbar: load navbar from the navbar template -->
+		<nav id="topbar" class="navbar navbar-expand-md"></nav>
+		
+		<!-- main body -->
 		<div id="home-portfolio" class="container-fluid">
-			<div class="row h-100">
+			<div class="row">
 				<div id="home-leftCol" class="col-sm-5">
 					<picture>
-						<source media="(min-width: 650px)" srcset="images/home.jpg">
-						<source media="(min-width: 465px)" srcset="images/home.jpg">
-						<img class="rounded-circle" src="images/home.jpg">
+						<source media="(max-width: 600px)" srcset="images/home-600x800.jpg">
+						<source media="(min-width: 800px)" srcset="images/home-1200x1600.jpg">
+						<img class="rounded-circle" src="images/home-1932x2576.jpg" alt="Home Picture">
 					</picture>
 				</div>				
 				<div id="home-rightCol" class="col-sm-7 my-auto">
@@ -52,8 +36,14 @@
 			</div>
 		</div>
 		
+		<!-- Scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script>
+			$(function(){
+				$("#topbar").load("navbar.html");
+			});
+		</script>
 	</body>
 </html> 

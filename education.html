@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html id="top">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ha Tran - Education</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">	
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	
+	<body>
+		<!-- navbar: load navbar from the navbar template -->
+		<nav id="topbar" class="navbar navbar-expand-md"></nav>
+		
+		<!-- sidebar: load side bar from the sidebar template-->
+		<div id="sidebar"></div>
+
+		<!-- Start: Main body -->
+		<div class="projects-main">
+			<!-- Start: Education section -->
+			<section id="education">
+				<h3><i class="fa fa-graduation-cap mr-2"></i>Education</h3>
+				
+				<article class="all-articles">
+					<h5>University of Natural Sciences, Ho Chi Minh City, Vietnam</h5>
+					<h6>Bachelor of Science - Mathematics and Computer Science</h6>
+					<hr>
+					<p>Learning Math and technical knowledge such as computer architecture, data structure, database, 
+						object-oriented programing, etc. provided me with a logical thinking skill and a good analyzing skill 
+						which are important to any positions in software development projects.</p>
+				</article>
+				
+				<article class="all-articles">
+					<h5>Conestoga College, Canada</h5>
+					<h6>Postgraduate certificate - Information Technology Business Analysis</h6>
+					<h6>GPA: 3.72</h6>
+					<hr>
+					<p>I graduated from this ITBA program in Dec 2019 as one of the toppers of the program with distinction 
+						on the Dean’s Honour List.</p>
+					<p>I learnt a lot of valuable and practical knowledge that is specialized for business analysis from this program:</p>
+					<ul>
+						<li>Communication skills</li>
+						<li>Tools, skills, and techniques to do requirement gathering and requirement elicitation: rich picture, 
+							brainstorming, user story, use case, feature tree, contact diagram, ecosystem map, actor diagram, 
+							wireframe, mockup, prototype, etc. </li>
+						<li>Microsoft Office, SQL Server, data analysis tools such as Power BI, Gephi</li>
+					</ul>
+				</article>
+				
+				<article class="all-articles">
+					<h5>Other Certification</h5>
+					<h6>ISTQB Foundation certification</h6>					
+					<hr>
+					
+					<p>This is a standardized qualification for software testers that is offered by the International Software
+						Testing Qualifications Board (ISTQB).</p>
+				</article>
+
+				<article class="all-articles">
+					<h5>Programing Languages</h5>
+					<hr>
+					
+					<h6 style="text-align: center">CSharp, JavaScript, Python<h6>
+
+					<div id="myslider" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#myslider" data-slide-to="0" class="active"></li>
+							<li data-target="#myslider" data-slide-to="1"></li>
+							<li data-target="#myslider" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-interval="5000">
+								<picture>
+									<source media="(max-width: 600px)" srcset="images/python-731x568.jpg">
+									<source media="(min-width: 800px)" srcset="images/python-1600x1200.jpg">
+									<img class="d-block w-100" src="images/python-2533x1900.jpg" alt="Python Certification">
+								</picture>
+							</div>
+							<div class="carousel-item" data-interval="5000">
+								<picture>
+									<source media="(max-width: 600px)" srcset="images/csharp-731x571.jpg">
+									<source media="(min-width: 800px)" srcset="images/csharp-1600x1200.jpg">
+									<img class="d-block w-100" src="images/csharp-2533x1900.jpg" alt="Csharp Certification">
+								</picture>								
+							</div>
+							<div class="carousel-item" data-interval="5000">
+								<picture>
+									<source media="(max-width: 600px)" srcset="images/javascript-728x570.jpg">
+									<source media="(min-width: 800px)" srcset="images/javascript-1600x1200.jpg">
+									<img class="d-block w-100" src="images/javascript-2533x1900.jpg" alt="JavaScript Certification">
+								</picture>										
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#myslider" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#myslider" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>					
+				</article>				
+			</section>
+			<!-- End: Education section -->
+		</div>
+		<!-- End: Main body -->
+		
+		<!-- Scripts -->
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script>
+			$(function(){
+				$("#topbar").load("navbar.html");
+			});
+		</script>
+		<script>
+			$(function(){
+				$("#sidebar").load("sidebar.html");
+			});
+		</script>		
+	</body>
+</html> 
