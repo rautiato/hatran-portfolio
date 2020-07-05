@@ -4,7 +4,7 @@
 		width: 50px;
 	}
 
-	#nav-myname{
+	#nav-home{
 		font-size: 25px;
 	}
 	
@@ -23,7 +23,8 @@
 		text-decoration: none;
 		font-size: 17px;
 	}
-
+	
+	/* decrese padding to fullfill background color when hovering*/
 	.nav-item{
 		padding:0.5rem 0.5rem;
 	}
