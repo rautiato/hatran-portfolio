@@ -121,8 +121,8 @@
 	}
 
 /* Start: index page */
-	#home-portfolio, #about-me{
-		/* Centering content of the index, about pages */
+	#home-portfolio {
+		/* Centering content of the index, page */
 		position: absolute;
 		margin: auto;
 		top: 0;
@@ -154,11 +154,12 @@
 /* End: index page */
 
 /* Start: about page */
-	#about-me {
+	#about-me{
+		width: 60%;
+		height: 70%;
+		margin-top: 100px;
+		border: 15px solid #004d4d;
 		background-color: #FAFAD2;
-	}
-	.col-sm-12 {
-		border: 25px solid #004d4d;
 		padding-top: 25px;
 	}
 	
@@ -174,20 +175,14 @@
 	#contact {
 		/* Centering content of the contact page */
 		width: 60%;
-		height: 70%;
+		height: 65%;
 		margin-top: 100px;
-	}
-
-	#contact {
-		border: 25px solid #004d4d;
+		border: 15px solid #004d4d;
+		background-color: #FAFAD2;
 	}
 	
 	#contact-leftCol {
 		padding: 0;
-	}		
-	
-	#contact-rightCol {
-		background-color: #FAFAD2;
 	}
 	
 	#contact-rightCol a:hover{
@@ -196,18 +191,18 @@
 
 	#contact-rightCol i {
 		color: #004d4d;
-		font-size: 40px;
+		font-size: 30px;
 		padding-left: 20px;
 	}		
 
 	#contact-rightCol span{
-		font-size: 25px;
+		font-size: 20px;
 		padding-left: 10px;
 	}
 	
 	#contact-name-card{
 		text-align: center;
-		font-size: 45px;
+		font-size: 30px;
 		color: #004d4d;
 	}
 		
@@ -290,13 +285,9 @@
 		padding: 20px;
 	}	
 	
-	#about-me {
-		width: 100%;
-	}
-	
-	#contact {
+	#about-me, #contact {
 		width: 100%;
 		height: 100%;
-		margin-top: 0;
+		margin-top: 30px;
 	}
 }
