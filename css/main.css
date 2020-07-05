@@ -120,9 +120,9 @@
 		background: WhiteSmoke;
 	}
 
-/* Start: portfolio page */
-	#home-portfolio {
-		/* Centering content of the portfolio page */
+/* Start: index page */
+	#home-portfolio, #about-me{
+		/* Centering content of the index, about pages */
 		position: absolute;
 		margin: auto;
 		top: 0;
@@ -134,13 +134,12 @@
 	}
 	
 	#home-rightCol {
-		font-weight: bold;
 		text-align: center;
 	}
 
-	#home-rightCol h1, h3, h5 {
+	#home-rightCol > h6 {
+		color: Teal;
 		font-weight: bold;
-		text-align: center;
 	}
 
 	#home-leftCol {
@@ -152,7 +151,67 @@
 		width: 100%;
 		height: auto;
 	}
-/* End: portfolio page */
+/* End: index page */
+
+/* Start: about page */
+	#about-me {
+		background-color: #FAFAD2;
+	}
+	.col-sm-12 {
+		border: 25px solid #004d4d;
+		padding-top: 25px;
+	}
+	
+	#signature {
+		text-align: right;
+		color: #004d4d;
+		font-weight: bold;
+	}
+/* End: about page */
+
+/* Start: contact page */
+
+	#contact {
+		/* Centering content of the contact page */
+		width: 60%;
+		height: 70%;
+		margin-top: 100px;
+	}
+
+	#contact {
+		border: 25px solid #004d4d;
+	}
+	
+	#contact-leftCol {
+		padding: 0;
+	}		
+	
+	#contact-rightCol {
+		background-color: #FAFAD2;
+	}
+	
+	#contact-rightCol a:hover{
+		text-decoration: none;
+	}		
+
+	#contact-rightCol i {
+		color: #004d4d;
+		font-size: 40px;
+		padding-left: 20px;
+	}		
+
+	#contact-rightCol span{
+		font-size: 25px;
+		padding-left: 10px;
+	}
+	
+	#contact-name-card{
+		text-align: center;
+		font-size: 45px;
+		color: #004d4d;
+	}
+		
+/* End: contact page */	
 
 /* Start: projects page */
 	.projects-main {
@@ -179,7 +238,7 @@
 		text-align: left;
 	}
 
-	article h5, h6 {
+	article > h5, article > h6 {
 		color: #006666;
 		font-weight: bold;
 		text-align: left;
@@ -214,83 +273,30 @@
 	}
 
 /* End: projects page */
-
-/* Start: about page */
-	.card-parent-div {
-		position: absolute;
-		margin: auto;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		width: 60%;
-		height: 65%;
-		padding: 20px;
-		background: #004d4d;
-		display: flex; /*make parent a flexbox*/
-		flex-direction: column; /*children should go down the page*/
-	}
 	
-	.card-child-div {
-		flex: 1;
-		background-color: #FAFAD2;
-		padding: 10px;
-		overflow: auto;
-		margin: 5px;
-	}
-	
-	footer {
-		text-align: right;
-		color: #004d4d;
-		font-weight: bold;
-	}
-/* End: about page */
-
-/* Start: contact page */
-		.contact-row {
-			flex: 1;
-			background-color: #FAFAD2;
-			margin: 5px;
-			overflow: auto;
-		}
-
-		#contact-leftCol {
-			padding: 0;
-		}		
-		
-		#contact-rightCol {
-			padding-top: 15px;
-		}		
-		
-		#contact-rightCol a:hover{
-			text-decoration: none;
-		}		
-
-		#contact-rightCol i {
-			color: #004d4d;
-			font-size: 40px;
-			padding-left: 15px;
-		}		
-
-		#contact-rightCol span{
-			font-size: 27px;
-		}
-		
-		#contact-name-card{
-			text-align: center;
-			font-size: 45px;
-			color: #004d4d;
-		}
-		
-/* End: contact page */		
 
 @media screen and (max-width: 500px) {
 	.navbar a {
 	float: none;
 	display: block;
+	text-align: center;
 	}
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+	
+	.sidenav {
+		display: none;
+	}
+	.projects-main {
+		margin-left: 0;
+		padding: 20px;
+	}	
+	
+	#about-me {
+		width: 100%;
+	}
+	
+	#contact {
+		width: 100%;
+		height: 100%;
+		margin-top: 0;
+	}
 }
